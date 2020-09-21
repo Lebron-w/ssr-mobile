@@ -1,0 +1,176 @@
+html {
+  background-color: @pp-background-color;
+  color: @pp-font-color;
+  font-size: @pp-size;
+}
+body{
+  width: 100%;
+  font-size:14px;
+  font-family: 'patpat-Regular',sans-serif;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust:none; // 修复safari下字体缩放问题
+}
+ul,li,ol{list-style: none;}
+img{vertical-align: middle;border: none;}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-style: normal;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  a{
+    color: @pp-font-color;
+    &:focus{
+      outline: none;
+    }
+  }
+  a,
+  input,
+  button,
+  textarea,
+  [class*='pui-'] {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:after,.clear:before{
+  content:'';
+  clear:both;
+  display:block;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  color: #fff;
+  background: #ff2556;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 14px;
+}
+
+// 自定义滚动条样式
+// 这是针对缺省样式 (必须的)
+::-webkit-scrollbar {
+  width: 0px;
+  height: 10px;
+}
+
+// 滚动条的滑轨背景颜色
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+// 滑块颜色
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+// 滑轨两头的监听按钮颜色
+::-webkit-scrollbar-button {
+  background-color: #7c2929;
+  height: 0;
+  width: 0px;
+}
+
+// 横向滚动条和纵向滚动条相交处尖角的颜色
+::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: 'patpat-Medium', sans-serif;
+  font-size:18px;
+  font-weight: normal;
+}
+h3 {
+  font-family: 'patpat-Medium', sans-serif;
+  font-size:16px;
+  font-weight: normal;
+}
+h4 {
+  font-family: 'patpat-Medium', sans-serif;
+  font-size:16px;
+  font-weight: normal;
+}
+
+.font-B {
+  font-family: 'patpat-Bold', sans-serif;
+}
+
+.font-R {
+  font-family: 'patpat-Regular', sans-serif;
+}
+
+.font-M {
+  font-family: 'patpat-Medium', sans-serif;
+}
+
+button {
+  background: none;
+  font-family: 'patpat-Regular', sans-serif;
+}
+
+/*正常*/
+/*声明 WebFont patpat-Bold*/
+@font-face {
+  font-family: 'patpat-Bold';
+  src: url('../assets/fonts/HKGrotesk-Bold.eot');
+  src:
+    url('../assets/fonts/HKGrotesk-Bold.eot?#font-spider') format('embedded-opentype'),
+    url('../assets/fonts/HKGrotesk-Bold.woff') format('woff'),
+    url('../assets/fonts/HKGrotesk-Bold.ttf') format('truetype'),
+    url('../assets/fonts/HKGrotesk-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*声明 WebFont patpat-Medium*/
+@font-face {
+  font-family: 'patpat-Medium';
+  src: url('../assets/fonts/HKGrotesk-Medium.eot');
+  src:
+    url('../assets/fonts/HKGrotesk-Medium.eot?#font-spider') format('embedded-opentype'),
+    url('../assets/fonts/HKGrotesk-Medium.woff') format('woff'),
+    url('../assets/fonts/HKGrotesk-Medium.ttf') format('truetype'),
+    url('../assets/fonts/HKGrotesk-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*声明 WebFont patpat-Regular*/
+@font-face {
+  font-family: 'patpat-Regular';
+  src: url('../assets/fonts/HKGrotesk-Regular.eot');
+  src:
+    url('../assets/fonts/HKGrotesk-Regular.eot?#font-spider') format('embedded-opentype'),
+    url('../assets/fonts/HKGrotesk-Regular.woff') format('woff'),
+    url('../assets/fonts/HKGrotesk-Regular.ttf') format('truetype'),
+    url('../assets/fonts/HKGrotesk-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

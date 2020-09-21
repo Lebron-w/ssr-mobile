@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+  .st0{fill:url(#SVGID_1_);}
+  .st1{fill:url(#SVGID_2_);}
+  .st2{fill:#FFFFFF;}
+  .st3{font-family:'Helvetica-Bold';}
+  .st4{font-size:138.516px;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="143.7255" y1="370.2741" x2="884.7495" y2="370.2741">
+  <stop  offset="0" style="stop-color:#EE1D5A"/>
+  <stop  offset="1" style="stop-color:#F05B59"/>
+</linearGradient>
+<path class="st0" d="M536.15,14.87c-141.21-2.09-227.53,63.85-257.52,88.23c-65.51,55.45-134.9,154.26-134.9,284.05
+  c0,174.64,104.22,285.76,184.63,331.72c41.83,21.29,56.77-11.93,40.82-32.14c-8.77-11.7-13.29-23.32-14.96-33.94
+  c46.92,31.42,116.05,54.7,182.45,54.7c191.04,0,348.09-155.51,348.09-345.94C884.75,170.41,725.39,18.31,536.15,14.87z
+   M532.89,582.67c-121.12,1.6-230.31-96.36-230.63-221.77c-0.23-90.05,56.2-150.93,76.16-164.98c19.73-15.23,38.87-16.31,46.83,1.33
+  c24.99,55.33,97.85,79.97,150.87,68.87c16.57-3.74,28.39-20.82,7.95-36.24c-62.09-49.05-16.92-93.79,29.79-77.15
+  c71.63,24.78,149.89,99.05,149.33,208.17C762.55,486.3,664.38,580.93,532.89,582.67z"/>
+<radialGradient id="SVGID_2_" cx="640.1876" cy="835.8969" r="340.1696" fx="926.4661" fy="652.1581" gradientTransform="matrix(1 0 0 0.8806 0 99.8305)" gradientUnits="userSpaceOnUse">
+  <stop  offset="0" style="stop-color:#EE1D5A"/>
+  <stop  offset="0.3584" style="stop-color:#EF395A"/>
+  <stop  offset="0.7575" style="stop-color:#F05259"/>
+  <stop  offset="1" style="stop-color:#F05B59"/>
+</radialGradient>
+<path class="st1" d="M56.39,776c93.34,139.05,267.43,232.57,466.81,232.57c199.38,0,373.47-93.52,466.81-232.57H56.39z"/>
+<text transform="matrix(1 0 0 1 385.082 927.6671)" class="st2 st3 st4">LITE</text>
+</svg>

@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    .tops-activity-con{
+      min-height: 202px;
+    }
+    .error-404 {
+      min-height: 202px;
+      padding-top: 90px;
+    }
+    .error404-wrap {
+      margin: 0 auto;
+      background: #fff;
+      width: 100%;
+      height: auto;
+      border: 0;
+      position: relative;
+      font-family: FuturaStdMedium, Verdana, Geneva, sans-serif;
+      text-align: center;
+      color: #333;
+      font-size: 14px;
+    }
+    .error404-title {
+      font-size: 0;
+      display: table;
+      color: #9ba5a7;
+      font-family: patpat-medium, sans-serif;
+      margin-bottom: 45px;
+      width: 100%;
+    }
+    .left-img {
+      display: block;
+      width: 140px;
+      padding: 0;
+      margin: 0 auto;
+    }
+    .left-img img {
+      width: 100%;
+    }
+    .right-message {
+      display: inline-block;
+      text-align: left;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .right-message p {
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      font-family: patpat-medium, sans-serif;
+      margin: 0;
+    }
+    .error404-url {
+      text-align: center;
+    }
+    .error404-url li {
+      width: 90px;
+      height: 30px;
+      border: 1px solid #cdd2d3;
+      border-radius: 5px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+    }
+    .error404-url li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 30px;
+      font-family: patpat-Regular, sans-serif;
+      text-decoration: none;
+      padding-left: 20px;
+      box-sizing: border-box;
+      color: #444;
+    }
+    .error404-url li:first-of-type  a {
+      background: url(https://p-m.ppwebstatic.com/assets/img/icon/404.png) no-repeat 10px 9px;
+    }
+    .error404-url li:nth-of-type(2) a {
+      padding-left: 33px;
+      background: url(https://p-m.ppwebstatic.com/assets/img/icon/404.png) no-repeat 18px -15px;
+    }
+    .error404-url li:nth-of-type(3) {
+      width:130px;
+    }
+    .error404-url li:nth-of-type(3) a {
+      background: url(https://p-m.ppwebstatic.com/assets/img/icon/404.png) no-repeat 8px -40px;
+    }
+    .error404-question {
+      margin: 20px;
+    }
+    .ending-time {
+      position: absolute;
+      top: -44px;
+      right: 20px;
+      font-size: 24px;
+      font-family: patpat-medium, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-404 site-top-activity tops-activity-con">
+    <div class="container">
+      <div class="error404-wrap">
+        <div class="error404-title">
+          <div class="left-img">
+            <img src="https://p-m.ppwebstatic.com/assets/img/error/Baby.png" alt="">
+          </div>
+          <div class="right-message">
+            <h2>Shhh...</h2>
+            <p>Our baby is having sweet dreams.</p>
+            <p>Please visit other pages.</p>
+          </div>
+        </div>
+        <ul class="error404-url">
+          <li>
+            <a tabindex="0" href="javascript:history.go(-1);">Go back</a>
+          </li>
+          <li>
+            <a href="/" class="router-link-active" tabindex="0">Home</a>
+          </li>
+          <li>
+            <a href="/dailyspecial/All" class="" tabindex="0">Daily Specials</a>
+          </li>
+        </ul>
+        <p class="error404-question">Questions? Please contact us at <a tabindex="0" href="/article/help">service@patpat.com</a></p>
+        <div class="ending-time">
+          <span>5</span>s
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.onload = function () {
+      var step = 5
+      var timer = setInterval( () => {
+        console.log(step)
+        if (step < 0) {
+          clearInterval(timer)
+          window.location.href = "/"
+        } else {
+          document.getElementsByClassName('ending-time')[0].children[0].innerHTML = step
+        }
+        step--
+      }, 1000)
+    }
+  </script>
+</body>
+</html>

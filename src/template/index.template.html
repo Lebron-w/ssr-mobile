@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{siteInfo.langCode === 'zh' ? 'zh-Hant' :siteInfo.langCode }}" id="country-{{siteInfo.langCode}}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="manifest" href="/assets/manifest.json" />
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5GJGP2');
+    window.dataLayer.push({is_ssr: 'true'})
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- 标题描述关键字 -->
+  <title>{{ title }}</title>
+  <meta name="Keywords" content="{{keywords}}" />
+  <meta name="Description" content="{{description}}" />
+  <!-- 标题描述关键字  end -->
+
+  <% if (url.indexOf('/layout/activities/') < 0 && url.indexOf('/search') < 0) {%>
+  <!-- 国际化标签 自定义活动页和搜索页不显示 -->
+  <link rel="alternate" href="https://us-m.patpat.com{{seoUrl}}" hreflang="en-us" />
+  <link rel="alternate" href="https://uk-m.patpat.com{{seoUrl}}" hreflang="en-gb" />
+  <link rel="alternate" href="https://au-m.patpat.com{{seoUrl}}" hreflang="en-au" />
+  <link rel="alternate" href="https://es-m.patpat.com{{seoUrl}}" hreflang="es" />
+  <link rel="alternate" href="https://mx-m.patpat.com{{seoUrl}}" hreflang="es-mx" />
+  <link rel="alternate" href="https://fr-m.patpat.com{{seoUrl}}" hreflang="fr" />
+  <link rel="alternate" href="https://br-m.patpat.com{{seoUrl}}" hreflang="pt-br" />
+  <link rel="alternate" href="https://ar-m.patpat.com{{seoUrl}}" hreflang="ar" />
+  <link rel="alternate" href="https://de-m.patpat.com{{seoUrl}}" hreflang="de" />
+  <link rel="alternate" href="https://hk-m.patpat.com{{seoUrl}}" hreflang="zh-Hant" />
+  <link rel="alternate" href="https://asia-m.patpat.com{{seoUrl}}" hreflang="en" />
+  <!-- 国际化标签 end -->
+  <% } %>
+
+  <link rel="canonical" href="https://{{siteInfo.siteAbb}}.patpat.com{{seoUrl}}" />
+
+  <!-- 分享信息 -->
+  <meta property="og:image" content="//p-pc.ppwebstatic.com/static/patpat_og_image.jpg">
+  <meta property="og:image:alt" content="PatPat Daliy Deals for Moms & Babies">
+  <meta property="og:image:type" content="image/jpg" id="ember62048657" class="ember-view">
+  <meta property="og:image:width" content="950">
+  <meta property="og:image:height" content="519"></meta>
+  <meta property="og:image:alt" content="PatPat Daliy Deals for Moms & Babies">
+  <!-- 分享信息 end -->
+  <meta name="robots" content="index, follow">
+
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-5GJGP2"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!--vue-ssr-outlet-->
+</body>
+</html>
